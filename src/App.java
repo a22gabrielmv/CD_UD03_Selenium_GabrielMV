@@ -21,8 +21,8 @@ public class App {
 
         Thread.sleep(3000);
 
-        driver.get("https://es.wikipedia.org/");
-      /*  WebElement cajaBusqueda =  driver.findElement(By.id("searchInput"));
+        driver.get("https://www.instant-gaming.com/es/");
+        WebElement cajaBusqueda =  driver.findElement(By.id("cart-app"));
         cajaBusqueda.sendKeys("Selenium");
         System.out.println(driver.getTitle());
         driver.findElement(By.id("n-portal")).click();
@@ -46,16 +46,16 @@ public class App {
 
 
 
-        WebElement cajaBusqueda = driver.findElement(By.id("searchInput"));
+        cajaBusqueda = driver.findElement(By.id("cart-app"));
 
-        WebElement botonBusqueda = driver.findElement(By.id("searchButton"));
+        WebElement botonBusqueda = driver.findElement(By.className("button button-main addtocart mimic"));
         cajaBusqueda.sendKeys("Boiro");
         botonBusqueda.sendKeys(Keys.ENTER);
 
         assertEquals("Boiro", driver.getTitle());
 
 
-        Thread.sleep(3000);  */
+        Thread.sleep(3000);
         
     } catch (InterruptedException e) {
         // TODO Auto-generated catch block
